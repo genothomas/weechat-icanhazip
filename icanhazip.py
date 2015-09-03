@@ -10,9 +10,9 @@ weechat.register(SCRIPT_NAME, SCRIPT_AUTHOR, SCRIPT_VERSION, SCRIPT_LICENSE, SCR
 weechat.hook_command("icanhazip", SCRIPT_DESC, "", "", "", "icanhazip", "")
 
 def icanhazip(data, buffer, args):
-    if args in ('ipv6', '6'):
+    if args in ("ipv6", "6"):
         url = "http://ipv6.icanhazip.com/"
-    elif args in ('ipv4', '4'):
+    elif args in ("ipv4", "4"):
         url = "http://ipv4.icanhazip.com"
     else:
         url = "https://icanhazip.com"

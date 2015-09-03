@@ -17,7 +17,7 @@ def icanhazip(data, buffer, args):
     else:
         url = "https://icanhazip.com"
     
-    weechat.hook_process("url:%s" % url, 5 * 1000, "icanhazip_process_cb", "")
+    weechat.hook_process("url:" + url, 5 * 1000, "icanhazip_process_cb", "")
     return weechat.WEECHAT_RC_OK
 
 def icanhazip_process_cb(data, command, rc, out, err):
